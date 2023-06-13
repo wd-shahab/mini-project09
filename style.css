@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-size: 15px;
+}
+body{
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 280px;
+}
+.continer{
+    width: 80%;
+    text-align: center;
+    min-width: 280px;
+}
+h1{
+    color: hsl(300, 86%, 23%);
+    margin: 20px 0;
+    font-size: 40px;
+}
+div.continer p{
+    color: hsl(300, 1%, 39%);
+}
+.fstar{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    background-color: hsla(300, 2%, 76%, 0.233);
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.fstar span::before{
+    content: url("./images/icon-star.svg");
+    margin: 0 0.3vw 0 0;
+}
+.comments{
+    width: 100%;
+    background-color: hsl(300, 86%, 23%);
+    text-align: left;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 7px;
+    overflow: auto;
+}
+.name{
+    color: rgb(231, 227, 227) !important;
+}
+.b{
+    color:  hsl(320, 87%, 50%) !important;
+}
+.comm{
+    color: rgb(204, 187, 187) !important;
+    font-size: 15px;
+    margin: 10px;
+}
+.C{
+    display: inline-block;
+}
+.A{
+    display: inline-block;
+}
+.I{
+    display: inline-block;
+}
+img{
+    border-radius: 50%;
+    width: 30px;
+    margin: 0 15px;
+}
+.attribution{
+    text-align: center;
+}
+@media screen and (min-width:700px){
+    div{display: inline-block;}
+    .continer{
+        text-align: start;
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .top{
+        display: flex;
+        align-items: flex-end;
+    }
+    .left{
+        width: 45%;
+        padding:0 10%;
+    }
+    .starbox{
+        width: 45%;
+    }
+    .fstar div{
+        margin: 0 0.25%;
+    }
+    .fstar{
+        text-align: start;
+        width: 80%;
+        margin: 10px 0;
+    }
+    .fstar:nth-child(2){
+        margin: 10px 40px;
+    }
+    .fstar:nth-child(3){
+        float: right;
+    }
+    .comments{
+        width: 25%;
+        margin: 10px;
+    }
+    .commbox{
+        display: flex;
+        justify-content: center;
+        margin: 25px 0;
+        height: 220px;
+    }
+    .comments:nth-child(2){
+        align-self: center;
+    }
+    .comments:nth-child(1){
+        align-self: flex-start;
+    }
+    .comments:nth-child(3){
+        align-self: flex-end;
+    }
+}
